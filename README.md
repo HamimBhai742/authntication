@@ -2,6 +2,10 @@
 
 A modern React authentication system with multiple auth flows built with Vite and TailwindCSS.
 
+## Live Demo
+
+🚀 **Live URL:** https://auth-742.netlify.app
+
 ## Features
 
 - User Registration

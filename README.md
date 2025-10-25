@@ -1,16 +1,99 @@
-# React + Vite
+# Authentication App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React authentication system with multiple auth flows built with Vite and TailwindCSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Registration
+- User Login
+- Forgot Password
+- OTP Verification
+- Responsive Design with TailwindCSS
+- Client-side Routing with React Router
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** 19.1.1
+- **Vite** 7.1.7
+- **React Router DOM** 7.9.4
+- **TailwindCSS** 4.1.15
+- **ESLint** for code quality
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- pnpm package manager
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd authtication
+
+# Install dependencies
+pnpm install
+```
+
+### Development
+
+```bash
+# Start development server
+pnpm dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+```bash
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+```
+
+## Routes
+
+- `/` - Registration (default)
+- `/login` - User login
+- `/register` - User registration
+- `/forgot-password` - Password reset
+- `/otp` - OTP verification
+
+## Project Structure
+
+```
+src/
+├── pages/           # Authentication pages
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── ForgotPassword.jsx
+│   └── OTP.jsx
+├── routes/          # Router configuration
+├── layout/          # Layout components
+├── components/      # Shared components
+└── assets/          # Static assets
+```
+
+## Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.

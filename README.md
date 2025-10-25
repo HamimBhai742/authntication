@@ -68,15 +68,15 @@ pnpm preview
 
 ```
 src/
-├── pages/           # Authentication pages
+├── pages/                        # Authentication pages
 │   ├── Login.jsx
 │   ├── Register.jsx
 │   ├── ForgotPassword.jsx
 │   └── OTP.jsx
-├── routes/          # Router configuration
-├── layout/          # Layout components
-├── components/      # Shared components
-└── assets/          # Static assets
+├── routes/                      # Router configuration
+├── layout/                      # Layout components
+├── components/                  # Shared components
+└── assets/                      # Static assets
 ```
 
 ## Scripts
